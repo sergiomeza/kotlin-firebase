@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="250dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="3dp"
+
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/mImage"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_gravity="bottom"
+        android:scaleType="centerCrop"
+        android:transitionName="@string/app_name"/>
+
+    <LinearLayout
+        android:id="@+id/mLinearItemText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:background="@drawable/gradient"
+        android:layout_alignBottom="@+id/mImageItem"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/mTxtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="nombre"
+                style="@style/Base.TextAppearance.AppCompat.Headline"
+                android:textColor="#FFF" />
+
+            <TextView
+                android:id="@+id/mTxtDirector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:maxLength="40"
+                android:text="director"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:textColor="#dcdcdc" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mImageDelete"
+            android:src="@drawable/ic_delete"
+            android:padding="10dp"
+            android:tint="#FFF"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"/>
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+
+

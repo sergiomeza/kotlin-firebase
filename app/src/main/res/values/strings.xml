@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FirebaseTest</string>
+    <string name="please_wait">Un momento..</string>
+    <string name="positive">Aceptar</string>
+    <string name="logout">Cerrar sesión</string>
+    <string name="are_you_sure">Estás seguro?</string>
+    <string name="delete_title">Eliminar</string>
+    <string name="add_pelicula">Agregar pelicula</string>
+    <string name="register">Registrarse</string>
+
+    <string name="error_form">Escribe tu %1$s</string>
+</resources>
